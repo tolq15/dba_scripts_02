@@ -3,8 +3,8 @@
 # Setup environment from cron job
 . /home/oracle/scripts/.bash_profile_cron $1 $2
 
-#EMAIL=york.zhang@nuance.com
-EMAIL="NOD-Database-Services@nuance.com,NOC_Sun@nuance.com,NOC_India@nuance.com,opsDBAdmin@mobile.asp.nuance.com"
+#EMAIL=york.zhang@whatever.com
+EMAIL="NOD-Database-Services@whatever.com,NOC_Sun@whatever.com,NOC_India@whatever.com,opsDBAdmin@mobile.asp.whatever.com"
 SESSIONS_MAX=$3
 RPT_FILE=/tmp/active_session_rpt.txt
 

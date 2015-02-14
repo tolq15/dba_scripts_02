@@ -206,16 +206,16 @@ select to_char(run_date,'yyyy mm dd hh24 mi ss')
 
 #
 # Send e-mail with attached pictures
-#            to      => 'opsDBAdmin@mobile.asp.nuance.com',
-#            to      => 'anatoli.lyssak@nuance.com',
-#? anatoli.lyssak@mobile.asp.nuance.com
+#            to      => 'opsDBAdmin@mobile.asp.whatever.com',
+#            to      => 'anatoli.lyssak@whatever.com',
+#? anatoli.lyssak@mobile.asp.whatever.com
 my $sender=new Mail::Sender({
                              smtp => 'stoam02.ksea.net',
                              from => 'oracle@'.$server_name,
                            });
 
 $sender->OpenMultipart({
-                        to      => 'opsDBAdmin@mobile.asp.nuance.com',
+                        to      => 'opsDBAdmin@mobile.asp.whatever.com',
                         subject => 'GoldenGate Replicat Processes in ' . $location,
                       });
 

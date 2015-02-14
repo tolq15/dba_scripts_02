@@ -189,7 +189,7 @@ for my $tablespace_name (keys %ts_info)
 
     if ($percent_used >= $percent_max)
     {
-        `echo "Server $the_host; Database: $db_name: Tablespace $tablespace_name have $percent_used% space used." | mailx -s "Server $the_host; Database: $db_name: Tablespace $tablespace_name have $percent_used% space used." opsDBAdmin\@mobile.asp.nuance.com`;
+        `echo "Server $the_host; Database: $db_name: Tablespace $tablespace_name have $percent_used% space used." | mailx -s "Server $the_host; Database: $db_name: Tablespace $tablespace_name have $percent_used% space used." opsDBAdmin\@mobile.asp.whatever.com`;
     }
 }
 

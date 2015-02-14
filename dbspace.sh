@@ -19,4 +19,4 @@ cat $LOGFILE | grep "DATA_TS"  | sort -r									>> $MAILFILE
 echo														>> $MAILFILE
 cat $LOGFILE | grep "INDEX_TS" | sort -r									>> $MAILFILE
 
-cat $MAILFILE | mailx -s "$HOSTNAME : TableSpace Report" opsDBAdmin@mobile.asp.nuance.com
+cat $MAILFILE | mailx -s "$HOSTNAME : TableSpace Report" opsDBAdmin@mobile.asp.whatever.com

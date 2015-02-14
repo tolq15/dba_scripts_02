@@ -5,7 +5,7 @@
 
 cd $WORKING_DIR
 
-#EMAIL=kishore.mohapatra@nuance.com
+#EMAIL=kishore.mohapatra@whatever.com
 
 REPORT=$WORKING_DIR/reports/dbms_space_space_usage.txt
 

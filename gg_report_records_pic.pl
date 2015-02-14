@@ -133,16 +133,16 @@ generate_the_chart($title[0], $axis_y[0], \@data3Y, $file_name[0]);
 
 #
 # Send e-mail if there are errors
-#            to      => 'opsDBAdmin@mobile.asp.nuance.com',
-#            to      => 'anatoli.lyssak@nuance.com',
-# alias in Seattle:      anatoli.lyssak@mobile.asp.nuance.com
+#            to      => 'opsDBAdmin@mobile.asp.whatever.com',
+#            to      => 'anatoli.lyssak@whatever.com',
+# alias in Seattle:      anatoli.lyssak@mobile.asp.whatever.com
 my $sender=new Mail::Sender({
                              smtp => 'stoam02.ksea.net',
                              from => 'oracle@'.$server_name,
                            });
 
 $sender->OpenMultipart({
-                        to      => 'anatoli.lyssak@mobile.asp.nuance.com',
+                        to      => 'anatoli.lyssak@mobile.asp.whatever.com',
                         subject => 'NVC Application Activities Records in ' . $location,
                       });
 

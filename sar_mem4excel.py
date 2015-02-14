@@ -71,7 +71,7 @@ text_files = [text_files for text_files in all_sar_files if re.match('^sar.*', t
 # and read untill string starting with 'Average'
 for the_line in fileinput.input(text_files):
     # Read the first line of each file to find the date
-    # Linux 2.6.32-431.el6.x86_64 (mtl-babardn06d.nuance.com)   2014-01-24 ...
+    # Linux 2.6.32-431.el6.x86_64 (mtl-babardn06d.whatever.com)   2014-01-24 ...
     m_obj = re.match('Linux\s.*\s(\d{4}-\d\d-\d\d)$', the_line)
     if m_obj:
         file_timestamp =  m_obj.groups()[0]

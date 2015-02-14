@@ -174,15 +174,15 @@ select to_char(report_date,'mm/dd')
 
 #
 # Send e-mail with attached pictures
-#            to      => 'anatoli.lyssak@nuance.com',
-#            to      => 'opsDBAdmin@mobile.asp.nuance.com',
+#            to      => 'anatoli.lyssak@whatever.com',
+#            to      => 'opsDBAdmin@mobile.asp.whatever.com',
 my $sender=new Mail::Sender({
                              smtp => 'stoam02.ksea.net',
                              from => 'oracle@'.$server_name,
                            });
 
 $sender->OpenMultipart({
-                        to      => 'anatoli.lyssak@mobile.asp.nuance.com',
+                        to      => 'anatoli.lyssak@mobile.asp.whatever.com',
                         subject => 'NVC Application Activities in ' . $location,
                       });
 
